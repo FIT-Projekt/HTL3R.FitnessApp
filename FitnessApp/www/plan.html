@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+            <script src="js/jspdf.min.js"></script>
+            <script src="js/jspdf.plugin.autotable.js"></script>
+		<title>plan</title>
+		<style type="text/css">
+			table {
+			    border-collapse: collapse;
+			    width: 100%;
+			    max-width: 100%;
+			}
+
+			th, td {
+			    text-align: left;
+			    padding: 8px;
+			}
+        
+            td{
+                font-size:0.8em;
+            }
+
+			tr:nth-child(odd){
+				background-color: #f2f2f2;
+			}
+			tr:nth-child(even){
+				background-color: white;
+			}
+
+			h1{
+				color: white;
+			}
+
+			.day{
+				color: #3fc7f1 !important;
+				background-color: white !important;
+				font-size: 1.2em !important;
+			}
+
+			.desc{
+				color: #3fc7f1 !important;
+				background-color: white !important;
+				font-size: 1.2em !important;
+				
+			}
+
+			body{
+				background-color: #3fc7f1;
+                font-family:"Arial";
+			}
+
+			#export{
+				width: calc(100vw - 16px);
+				margin-top: 8px;
+				border: none;
+				color: white;
+				height: 30px;
+				background-color: black;
+				font-weight: bold;
+				margin-bottom: 50px;
+			}
+			
+			*:focus{
+    			outline: none;
+			}
+
+			 nav {
+			height:30px;
+			position:fixed;
+			width:100%;
+			left:0;
+			bottom:0;
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+		}
+
+		img {
+			width:30px;
+            height: 30px;
+		}
+
+		.name{
+			color: #3fc7f1;
+			font-weight: bold;
+
+		}
+
+		</style>
+	</head>
+	<body>
+		<h1>Trainingsplan</h1>
+		<nav>
+    			<img id="info" src="img/navinfo_white.png">
+    		
+    			<img id="main" src="img/navplan_blue.png">
+    		
+    			<img id="settings" src="img/navsettings_white.png">    		
+    	</nav>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/plan.js"></script>
+	</body>
+</html>

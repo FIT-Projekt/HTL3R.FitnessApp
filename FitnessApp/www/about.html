@@ -1,0 +1,98 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<title>About</title>
+        <meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<style type="text/css">
+			body {
+				font-family:"Arial";
+				background-color: #3fc7f1;
+			}
+			
+			
+		
+			 nav {
+			height:30px;
+			position:fixed;
+			width:100%;
+			left:0;
+			bottom:0;
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+		}
+        	
+		img {
+			width:30px;
+            height: 30px;
+		}
+		#wrapper{
+			margin-bottom: 60px;
+			text-align: center;
+			
+		}
+		h1{
+			color:white;
+		}
+		p{
+			text-align: center;
+		}
+		button{
+				width: calc(100vw - 16px);
+				margin-top: 8px;
+				border: none;
+				color: white;
+				height: 30px;
+				background-color: black;
+				font-weight: bold;
+				
+			}
+
+		
+			
+			
+		</style>
+		 <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Kontakt</h1>
+			<p>FIT@gmail.com</p>
+				
+			<h1>Über Uns</h1>
+				<p id="absatz">Wir sind ein Team, bestehend aus vier SchülerInnen der 4.Klasse, Zweig Medientechnik, der HTL-Rennweg.
+
+			<h1>Unser Ziel</h1>
+				Unser Ziel ist es, eine App zu entwickeln, die einem ganz einfach einen personalisierten Trainingsplan erstellt. Unser Fokos liegt vorallem darin, die User Experience möglichst simpel und einfach zu gestalten. Weiters ist es uns ein großes Anliegen, alle Funktionen offline zur Verfügung zu stellen. Die Auswertung des Algorithmus, bis hin zum erstellen eines PDF's ist also komplett ohne Internetverbindung möglich.</p>
+			
+			<h1>Das Team</h1>
+				<h3>Jessica Janoch - Projektleiterin</h3>
+				<h3>Katja Höbart - Projektstellvertreterin</h3>
+				<h3>Fabian Gartner - Programmierung</h3>
+				<h3>Sebastian Herberth - Design</h3>
+				<h3>Niklas Kienreich - Dokumentation</h3>
+				<a href="index.html">
+					<button>Zurück zum Tutorial</button>
+				</a>
+		</div>
+		 <nav>
+    			<img id="info" src="img/navinfo_blue.png">
+    		
+    			<img id="main" src="img/navplan_white.png">
+    		
+    			<img id="settings" src="img/navsettings_white.png">    		
+    	</nav>
+    	<script type="text/javascript">
+    		 $("#settings").click(function(){
+                navigator.notification.alert("Diese Funktion ist derzeit noch nicht verfügbar", function(){}, "Fehler", "OK");
+            });
+
+    		 $("#main").click(function(){
+                window.location = "maintest.html";
+            });
+    	</script>
+	</body>
+</html>

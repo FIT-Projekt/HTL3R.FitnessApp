@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        
+       	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <title>TestApp2</title>
+    </head>
+    <body>
+    	<a href="maintest.html">Skip</a>
+        <div class="app">
+            <div id="wrapper">
+            	<div class='prev-button-slick'>
+					<img src="img/left.png">
+				</div>
+            	<div class="your-class">
+					<div id="eins">
+						<h1>Über die App</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+						</p>
+					</div>
+				  	<div id="zwei">
+						<h1>Fitness Tips</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+						</p>
+					</div>
+				  	<div id="drei">
+						<h1>Ernährung</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididu
+					</div>
+				</div>
+				<div class='next-button-slick'>
+				    <img src="img/right.png">
+				</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/slick.js"></script>
+		<script type="text/javascript">
+        	$(document).ready(function(){
+  				$('.your-class').slick({
+  					adaptiveHeight: true,
+  					speed:400,
+  					arrows:false,
+  					fade:true,
+  					autoplay: true,
+  					autoplaySpeed: 10000,
+  					dots:true,
+  					infinite:false
+  				});
+			});
+
+			$('.next-button-slick').click(function(){
+    			$('.your-class').slick("slickNext");
+			});
+
+			$('.prev-button-slick').click(function(){
+    			$('.your-class').slick("slickPrev");
+			});
+
+        </script>
+    </body>
+</html>
