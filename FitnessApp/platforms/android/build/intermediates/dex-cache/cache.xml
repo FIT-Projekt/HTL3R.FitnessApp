@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\Schule\4.Klasse\ITP2\Projekte\1.Semester - FitnessApp\HTL3R.FitnessApp\FitnessApp\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="79d68b70e2f02123c5a1205261f8c9cc038870de">
+        <dex dex="E:\Schule\4.Klasse\ITP2\Projekte\1.Semester - FitnessApp\HTL3R.FitnessApp\FitnessApp\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_6e443a6fedb3dd8c7e90cefe9d2deaa8a348bec8.jar" />
+    </item>
+
+</items>
